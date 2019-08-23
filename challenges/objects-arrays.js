@@ -136,7 +136,7 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 */
 
 let lowerCase = [];
-lowerCase = zooAnimals.map(function(zooAnimal){
+lowerCase = zooAnimals.map(zooAnimal => {
   var cup = zooAnimal.animal_name;
   return cup.toLowerCase();
 });
@@ -148,7 +148,7 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 let lowerPopulation = [];
-lowerPopulation = zooAnimals.filter((zooAnimal) =>{
+lowerPopulation = zooAnimals.filter(zooAnimal =>{
   if (zooAnimal.population < 5){
     return true;
   }
@@ -170,6 +170,8 @@ console.log(populationTotal);
 /* 
 
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
+
+// done
 
 */
 
